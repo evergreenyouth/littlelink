@@ -28,10 +28,3 @@
     background-color: rgba(255, 255, 255, 0.1);  /* Slight highlight on hover */
     color: #FFFFFF;
 }
-
-/* Ensure the button container has no border */
-.button-stack {
-    border: none !important;
-    padding: 0;
-    margin: 0;
-
