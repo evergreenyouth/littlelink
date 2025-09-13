@@ -81,7 +81,24 @@
     </div>
   </div>
   <button id="share-btn" class="share-button">Share this page</button>
-<img src="qr.png" alt="QR Code" class="qr-code">
+<img src="qrcodeweb.png" alt="QR Code" class="qr-code">
 </body>
 
 </html>
+<script>
+document.getElementById('share-btn').addEventListener('click', async () => {
+  if (navigator.share) {
+    try {
+      await navigator.share({
+        title: document.title,
+        text: 'Check out my links!',
+        url: window.location.href
+      });
+    } catch (err) {
+      console.error('Share failed:', err);
+    }
+  } else {
+    alert("Sharing isn’t supported on this browser.");
+  }
+});
+</script>
