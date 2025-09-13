@@ -253,12 +253,11 @@ a:hover {
 
    /* Modifier for no avatar rounding */
   
-  }
-
-  /* Modifier for rounded avatar */
- 
-
-  /* Modifier for slightly rounded corners */
+.avatar.avatar--rounded,
+.avatar.avatar--soft,
+.avatar.avatar--none {
+  border-radius: 0%;
+}
 
 /* Theme System
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
