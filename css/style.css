@@ -404,3 +404,11 @@ ul li {
   border-radius: 0 !important;
   overflow: visible !important;
 }
+
+	/* Force all LittleLink buttons to have transparent background, white text, and a border */
+.button, button {
+    background-color: transparent !important;  /* Transparent background */
+    color: #FFFFFF !important;                 /* White text */
+    border: 1px solid #FFFFFF !important;      /* White border */
+}
+
