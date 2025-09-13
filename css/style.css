@@ -248,11 +248,12 @@ a:hover {
 	object-fit: cover;
 	background-position: center;
 	margin-bottom: var(--spacing-l);
+	 .avatar--none {
+	border-radius: 0%;
   }
 
    /* Modifier for no avatar rounding */
-   .avatar--none {
-	border-radius: 0%;
+  
   }
 
   /* Modifier for rounded avatar */
