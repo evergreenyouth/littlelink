@@ -166,3 +166,12 @@ footer {
     .container p { font-size: var(--scale-0); }
     .avatar { margin-bottom: var(--spacing-m); }
 }
+.qr-code {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 80px;   /* adjust size */
+  height: auto;
+  z-index: 1000;
+  cursor: pointer;
+}
