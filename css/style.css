@@ -214,12 +214,20 @@ a:hover {
     --button-text: #ffffff;
     --button-background: #transparent;
     --button-border: 1px solid #FFFFFF;
-	
-/* Edit - default */
+
+	/* Edit - default */
 .button-default {
     --button-text: #ffffff;
     --button-background: #transparent;
     --button-border: 1px solid #FFFFFF;
+	
+/* Edit - generic-email */
+.button-generic-email {
+    --button-text: #ffffff;
+    --button-background: #transparent;
+    --button-border: 1px solid #FFFFFF;
+
+	
 }
 }
 
