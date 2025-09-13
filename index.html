@@ -1,86 +1,170 @@
-<!DOCTYPE html>
+/* ================================
+   Base Typography & Variables
+================================ */
+:root {
+    font-size: 16px;
 
-<!--
-  To change the theme, change the class on the html tag below to one of:
-  - theme-auto: Automatically switches based on user's system preferences
-  - theme-light: Forces light theme
-  - theme-dark: Forces dark theme
--->
+    /* Typography scale */
+    --scale-0: 1rem;       /* 16px */
+    --scale-1: 1.25rem;    /* 20px */
+    --scale-2: 1.563rem;   /* 25px */
+    --scale-3: 1.953rem;   /* 31px */
+    --scale-4: 2.441rem;   /* 39px */
+    --scale-5: 3.052rem;   /* 49px */
 
-<html class="theme-auto" lang="en"> <!-- Update`class="theme-auto" with your preference -->
+    /* Spacing units */
+    --spacing-xs: 0.5rem;
+    --spacing-s: 1rem;
+    --spacing-m: 1.5rem;
+    --spacing-l: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-xxl: 4rem;
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    /* Colours */
+    --link-color: #C8A2FF;      /* lilac */
+    --link-hover-color: #B57EDC; /* darker lilac */
+    --bg-color: #121212;
+    --text-color: #FFFFFF;
+    --button-border: 1px solid #FFFFFF;
+}
 
-    <!-- Page Title - Change this to your name/brand (50-60 characters recommended) -->
-    <title>Evergreen Trans Youth Counselling & Support</title>
-    <link rel="icon" type="image/x-icon" href="/images/saplingteeny.ico"> <!-- Update this with your own favicon -->
+/* ================================
+   Body / Fonts
+================================ */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Inter', 'Open Sans', system-ui, sans-serif;
+    font-size: var(--scale-1);
+    line-height: 1.6;
+    font-weight: 400;
+}
 
-    <!-- Meta Description - Write a description (150-160 characters recommended) -->
-    <meta name="description" content="Evergreen Trans Youth Counselling & Support">
+/* Headings */
+h1 {
+    margin: 0 0 var(--spacing-m) 0;
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-size: var(--scale-5);
+    font-weight: 800;
+    line-height: 1.1;
+}
 
-    <!-- Keywords -->
-    <meta name="keywords" content="trans youth, trans youth people, trans mental health, trans teens, trans children, trans support, trans mutual aid, trans counselling, trans therapy, trans psychotherapy, trans emotional support, non-binary,">
+/* Paragraphs */
+.container p {
+    margin: 0 0 var(--spacing-xl) 0;
+    font-size: var(--scale-1);
+    line-height: 1.6;
+}
 
-    <!-- Canonical URL - Helps prevent duplicate content issues -->
-    <meta rel="canonical" href="https://evergreenyouth.org">
+/* ================================
+   Containers
+================================ */
+.container {
+    max-width: 37.5rem;  /* 600px */
+    width: 100%;
+    padding: var(--spacing-xl) var(--spacing-m) 0 var(--spacing-m);
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+}
 
-    <!-- Author Information -->
-    <meta name="author" content="Evergreen">
+/* Button stack */
+.button-stack {
+    border: none !important;  /* Remove border around the group */
+    padding: 0;
+    margin: 0;
+}
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/brands.css">
+/* ================================
+   Buttons
+================================ */
+.button, button,
+[class^="button"] {
+    display: flex;                 /* ensures each button is on its own line */
+    flex-direction: row;           /* icon + text remain side by side */
+    align-items: center;
+    justify-content: center;
+    width: 18.75rem;               /* 300px */
+    min-height: 3rem;              /* 48px */
+    padding: 0.75rem 1rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: normal;
+    background-color: transparent !important;
+    color: var(--text-color) !important;
+    border: var(--button-border);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-bottom: 1rem;           /* space between buttons */
+    text-align: center;
+    line-height: 1.3;
+}
 
-    <!-- LittleLink Extended Stylesheet (Optional) -->
-    <!-- <link rel="stylesheet" href="css/brands-extended.css"> -->
-    <!-- Learn more at https://github.com/sethcottle/littlelink-extended.
-         Remove comments if you've added LittleLink Extended dependencies -->
+/* Button hover effect */
+.button:hover, button:hover,
+[class^="button"]:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-color);
+}
 
-  </head>
+/* ================================
+   Links
+================================ */
+a {
+    color: var(--link-color);
+    text-decoration: underline;
+}
 
-<body>
+a:hover {
+    color: var(--link-hover-color);
+}
 
-    <div class="container">
-        <div class="column">
+/* ================================
+   Avatar
+================================ */
+.avatar {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    background-position: center;
+    display: block;
+    margin: 0 auto var(--spacing-l);
+    border-radius: 0 !important;
+}
 
-            <!--
-              By default, the Avatar is rounded. Use the following:
-              - avatar--rounded: Automatically rounds the image
-              - avatar--soft: Slightly rounds the image
-              - avatar--none: Removes any rounding
+.avatar-container {
+    border-radius: 0 !important;
+    overflow: visible !important;
+}
 
-              Be sure to replace the src with your own image path and update the alt text
-            -->
-            <img class="avatar avatar--none" src="images/logolongtrans.png" srcset="images/logotwolinetrans.png" alt="Evergreen">
+/* ================================
+   Icons
+================================ */
+.icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+}
 
-            <!-- Replace with your name or brand  -->
+/* ================================
+   Footer
+================================ */
+footer {
+    margin: var(--spacing-s) 0;  /* smaller footer */
+    font-size: var(--scale-0);
+}
 
-            <!-- Add a short description about yourself or your brand -->
-            <p>🏳️‍⚧ Evergreen Trans Youth Counselling & Support 🏳️‍🌈</p>
-
-            <!-- All your buttons go here -->
-            <div class="button-stack" role="navigation">
-
-<!-- Donate -->
-<a class="button button-donate" href="https://www.paypal.com/ncp/payment/8F42MQLV8ZEEU" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/paypal.svg" alt="Donate icon">Donate</a>
-             <!-- Instagram -->
-              <a class="button button-instagram" href="https://www.instagram.com/evergreen.trans" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/instagram.svg" alt="Instagram Logo">Instagram</a>
-             <!-- Email Us -->
-              <a class="button button-email-us" href="evergreen.trans@outlook.com" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-email.svg" alt="Email Icon">Email Us</a>
-
-      </div>
-
-      <!-- Feel free to add your own footer information, including updating `privacy.html` to reflect how your LittleLink fork is set up -->
-      <footer>
-        <a href="privacy.html">Privacy Policy</a> | Made using <a href="https://littlelink.io" target="_blank" rel="noopener">LittleLink</a>
-      </footer>
-
-    </div>
-  </div>
-
-</body>
-
-</html>
+/* ================================
+   Responsive
+================================ */
+@media (max-width: 34.375rem) {  /* 550px */
+    h1 { font-size: var(--scale-4); }
+    body { font-size: var(--scale-0); }
+    .container p { font-size: var(--scale-0); }
+    .avatar { margin-bottom: var(--spacing-m); }
+}
