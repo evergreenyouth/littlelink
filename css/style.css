@@ -197,9 +197,9 @@ a:hover {
   	font-weight:700;
 	text-decoration:none;
 	white-space:normal;
-  	background-color:var(--button-background,transparent);
-	color:var(--button-text,#FFFFFF);
-	border:var(--button-border,1px solid #FFFFFF);
+	background: #transparent;
+text: #ffffff;
+	border: 1px solid #FFFFFF;
 	border-radius:0.5rem;
 	cursor:pointer;
 	box-sizing:border-box;
@@ -207,6 +207,7 @@ a:hover {
   	margin-bottom:1rem;
 	text-align:center;
 	line-height:1.3;
+	   
 }
 
 /* Edit - Donate */
