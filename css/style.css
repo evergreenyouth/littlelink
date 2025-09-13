@@ -216,7 +216,7 @@ a:hover {
     --button-border: 1px solid #FFFFFF;
 
 	/* Edit - default */
-.button-default {
+.button {
     --button-text: #ffffff;
     --button-background: #transparent;
     --button-border: 1px solid #FFFFFF;
