@@ -190,7 +190,7 @@ a:hover {
 [class^="button"] {
     background-color: transparent !important;
     color: #FFFFFF !important;
-    border: 1px solid #FFFFFF !important;
+    border: 1px solid #FFFFFF !important;}
 	
 .button,button {
 	display:inline-flex;
@@ -203,8 +203,8 @@ a:hover {
   	font-weight:700;
 	text-decoration:none;
 	white-space:normal;
-	background: #transparent;
-text: #ffffff;
+	background: transparent;
+color: #ffffff;
 	border: 1px solid #FFFFFF;
 	border-radius:0.5rem;
 	cursor:pointer;
@@ -219,19 +219,19 @@ text: #ffffff;
 /* Edit - Donate */
 .button-donate {
     --button-text: #ffffff;
-    --button-background: #transparent;
+    --button-background: transparent;
     --button-border: 1px solid #FFFFFF;
 
 	/* Edit - default */
 .button {
     --button-text: #ffffff;
-    --button-background: #transparent;
+    --button-background: transparent;
     --button-border: 1px solid #FFFFFF;
 	
 /* Edit - button button-email-us */
 .button-email-us {
     --button-text: #ffffff;
-    --button-background: #transparent;
+    --button-background: transparent;
     --button-border: 1px solid #FFFFFF;
 
 	
