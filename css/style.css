@@ -65,8 +65,8 @@
   body {
 	margin:0;
 	padding:0;
-	background-color:#ffffff;
-	color:#1a1a1a;
+	background-color:#121212;
+	color:#ffffff;
 	font-family:"Open Sans",system-ui;
 	font-size:1.125rem;     				/* 18px */
     font-weight:400;
@@ -198,8 +198,8 @@ a:hover {
 	text-decoration:none;
 	white-space:normal;
   	background-color:var(--button-background,transparent);
-	color:var(--button-text,#000000);
-	border:var(--button-border,none);
+	color:var(--button-text,#FFFFFF);
+	border:var(--button-border,1px solid #FFFFFF);
 	border-radius:0.5rem;
 	cursor:pointer;
 	box-sizing:border-box;
