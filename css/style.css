@@ -398,3 +398,8 @@ ul li {
 }
 
 	border-radius: 0% !important;
+
+	.avatar-container {
+  border-radius: 0 !important;
+  overflow: visible !important;
+}
