@@ -174,11 +174,11 @@ footer {
   font-family: inherit;   /* match site font */
   color: var(--text-color);
   z-index: 1000;
-	  width: 60px;            /* small fixed width */
+	  width: 80px;            /* small fixed width */
 }
 
 .widget-icon {
-  width: 40px;
+  width: 80px;
   height: auto;
   display: block;
   margin: 0 auto 5px auto; /* centre and space below */
@@ -197,13 +197,14 @@ footer {
 /* Position share bottom-left */
 .share-widget {
   left: 20px;
+position: fixed!important;
 }
 
 /* Position QR bottom-right */
 .qr-widget {
   right: 20px;
+	  position: fixed!important;
 }
-
 .widget-button {
   background: #000;
   color: #fff;
@@ -213,6 +214,4 @@ footer {
   cursor: pointer;
 }
 
-.widget-button:hover {
-  background: #333;
-}
+
