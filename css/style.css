@@ -189,7 +189,7 @@ footer {
   width: f0px;
   height: auto;
   display: block;
-	 max-width: 80px;   /* keeps both QR and share icons small */
+	 max-width: 80px!important;   /* keeps both QR and share icons small */
   margin: 0 auto 5px auto; /* centre and space below */
 }
 
