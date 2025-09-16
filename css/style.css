@@ -154,7 +154,7 @@ a:hover {
 ================================ */
 footer {
     margin: var(--spacing-s) 0;  /* smaller vertical spacing */
-    font-size: 0.4rem;          /* smaller text */
+    font-size: 0.6rem;          /* smaller text */
 }
 
 /* ================================
