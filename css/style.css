@@ -166,27 +166,54 @@ footer {
     .container p { font-size: var(--scale-0); }
     .avatar { margin-bottom: var(--spacing-m); }
 }
-.qr-code {
+/* QR widget (image + text) */
+.qr-widget {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 80px;   /* adjust size */
-  height: auto;
+  text-align: center;
   z-index: 1000;
+}
+
+.qr-code {
+  width: 80px;
+  height: auto;
   cursor: pointer;
 }
 
+.qr-text {
+  margin-top: 5px;
+  font-size: 0.8rem;
+  color: #fff;
+  opacity: 0.8;
+}
+
+/* Share widget (icon + button) */
+.share-widget {
+  position: fixed;
+  bottom: 120px;   /* sits above QR code */
+  right: 20px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.share-icon {
+  width: 40px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
 .share-button {
-  display: block;
-  margin: 20px auto;
-  padding: 10px 20px;
+  padding: 8px 16px;
   background: #000;
   color: #fff;
   border: none;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
 }
+
 .share-button:hover {
   background: #333;
 }
+
