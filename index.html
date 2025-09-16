@@ -75,7 +75,7 @@
       </div>
 
       <!-- Feel free to add your own footer information, including updating `privacy.html` to reflect how your LittleLink fork is set up -->
-      <footer>
+     &nbsp;&nbsp;&nbsp; <footer>
         <a href="privacy.html">Privacy Policy</a> | Created the help of <a href="https://littlelink.io" target="_blank" rel="noopener">LittleLink</a>
       </footer>
 
@@ -90,7 +90,7 @@
 <!-- QR widget -->
 <div class="qr-widget">
   <img src="images/qrcodeweb.png" alt="QR Code" class="widget-icon">
-  <p class="widget-text">View on mobile</p>
+  <p class="widget-button">View on mobile</p>
 </div>
 
 </body>
@@ -102,7 +102,7 @@ document.getElementById('share-btn').addEventListener('click', async () => {
     try {
       await navigator.share({
         title: document.title,
-        text: 'Check out Evergreenyouth.org.uk!',
+        text: 'Evergreen Trans Youth Counselling & Support',
         url: window.location.href
       });
     } catch (err) {
