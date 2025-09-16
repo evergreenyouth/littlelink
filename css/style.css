@@ -174,10 +174,11 @@ footer {
   font-family: inherit;   /* match site font */
   color: var(--text-color);
   z-index: 1000;
+	  width: 60px;            /* small fixed width */
 }
 
 .widget-icon {
-  width: 60px;
+  width: 40px;
   height: auto;
   display: block;
   margin: 0 auto 5px auto; /* centre and space below */
@@ -185,11 +186,12 @@ footer {
 
 .widget-text,
 .widget-button {
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   font-family: inherit;   /* keep site font */
   text-align: center;
   display: block;
   margin: 0 auto;
+  line-height: 1.1;
 }
 
 /* Position share bottom-left */
@@ -206,8 +208,8 @@ footer {
   background: #000;
   color: #fff;
   border: none;
-  border-radius: 8px;
-  padding: 6px 12px;
+  border-radius: 4px;
+  padding: 6px 8px;
   cursor: pointer;
 }
 
