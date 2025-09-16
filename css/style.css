@@ -34,6 +34,7 @@
 body {
     margin: 0;
     padding: 0;
+	padding-bottom: 120px!important; /* adjust until the footer clears nicely */
     background-color: var(--bg-color);
     color: var(--text-color);
    font-family: 'Lexend', 'Open Sans', system-ui, sans-serif;
