@@ -166,54 +166,51 @@ footer {
     .container p { font-size: var(--scale-0); }
     .avatar { margin-bottom: var(--spacing-m); }
 }
-/* QR widget (image + text) */
-.qr-widget {
+/* Shared widget styles */
+.widget {
   position: fixed;
   bottom: 20px;
-  right: 20px;
   text-align: center;
+  font-family: inherit;   /* match site font */
+  color: var(--text-color);
   z-index: 1000;
 }
 
-.qr-code {
-  width: 80px;
+.widget-icon {
+  width: 60px;
   height: auto;
-  cursor: pointer;
+  display: block;
+  margin: 0 auto 5px auto; /* centre and space below */
 }
 
-.qr-text {
-  margin-top: 5px;
-  font-size: 0.8rem;
-  color: #fff;
-  opacity: 0.8;
+.widget-text,
+.widget-button {
+  font-size: 0.9rem;
+  font-family: inherit;   /* keep site font */
+  text-align: center;
+  display: block;
+  margin: 0 auto;
 }
 
-/* Share widget (icon + button) */
+/* Position share bottom-left */
 .share-widget {
-  position: fixed;
-  bottom: 120px;   /* sits above QR code */
+  left: 20px;
+}
+
+/* Position QR bottom-right */
+.qr-widget {
   right: 20px;
-  text-align: center;
-  z-index: 1000;
 }
 
-.share-icon {
-  width: 40px;
-  height: auto;
-  margin-bottom: 5px;
-}
-
-.share-button {
-  padding: 8px 16px;
+.widget-button {
   background: #000;
   color: #fff;
   border: none;
   border-radius: 8px;
-  font-size: 14px;
+  padding: 6px 12px;
   cursor: pointer;
 }
 
-.share-button:hover {
+.widget-button:hover {
   background: #333;
 }
-
