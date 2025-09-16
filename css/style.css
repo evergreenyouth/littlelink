@@ -198,7 +198,7 @@ footer {
   font-family: inherit;   /* keep site font */
   text-align: center;
   display: block;
-  margin: 0 auto;
+  margin: 0;
   line-height: 1.1;
 }
 
