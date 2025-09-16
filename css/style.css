@@ -51,6 +51,14 @@ h1 {
     line-height: 1.1;
 }
 
+/* Reset smaller heading margins */
+h2, h3, h4, h5, h6 {
+    margin: 0; /* removes default top/bottom/side spacing */
+    font-family: 'Lexend', 'Open Sans', sans-serif;
+    font-weight: 600; /* lighter than h1 but still heading-like */
+}
+
+
 /* Paragraphs */
 .container p {
     margin: 0 0 var(--spacing-xl) 0;
@@ -178,7 +186,7 @@ footer {
 }
 
 .widget-icon {
-  width: 80px;
+  width: f0px;
   height: auto;
   display: block;
   margin: 0 auto 5px auto; /* centre and space below */
