@@ -210,6 +210,11 @@ footer {
   left: 20px;
 	bottom: 20px;
 position: fixed!important;
+	cursor: pointer;         /* shows hand cursor */
+  display: flex;
+  flex-direction: column;  /* image above text */
+  align-items: center;     /* center text with image */
+  z-index: 1000;
 }
 
 /* Position QR bottom-right */
