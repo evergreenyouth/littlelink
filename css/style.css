@@ -197,12 +197,14 @@ footer {
 /* Position share bottom-left */
 .share-widget {
   left: 20px;
+	bottom: 20px;
 position: fixed!important;
 }
 
 /* Position QR bottom-right */
 .qr-widget {
   right: 20px;
+		bottom: 20px;
 	  position: fixed!important;
 }
 .widget-button {
