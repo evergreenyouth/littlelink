@@ -36,16 +36,16 @@ body {
     padding: 0;
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-family: 'Inter', 'Open Sans', system-ui, sans-serif;
+   font-family: 'Lexend', 'Open Sans', system-ui, sans-serif;
     font-size: var(--scale-1);
     line-height: 1.6;
-    font-weight: 400;
+    font-weight: 100;
 }
 
 /* Headings */
 h1 {
     margin: 0 0 var(--spacing-m) 0;
-    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-family: 'Lexend', 'Open Sans', sans-serif;
     font-size: var(--scale-5);
     font-weight: 800;
     line-height: 1.1;
