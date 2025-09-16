@@ -178,6 +178,7 @@ footer {
 .widget {
   position: fixed;
   bottom: 20px;
+	 display: block; 
   text-align: center;
   font-family: inherit;   /* match site font */
   color: var(--text-color);
