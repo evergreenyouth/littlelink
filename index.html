@@ -76,23 +76,33 @@
 
       <!-- Feel free to add your own footer information, including updating `privacy.html` to reflect how your LittleLink fork is set up -->
       <footer>
-        <a href="privacy.html">Privacy Policy</a> | Made thanks to <a href="https://littlelink.io" target="_blank" rel="noopener">LittleLink</a>
+        <a href="privacy.html">Privacy Policy</a> | Created the help of <a href="https://littlelink.io" target="_blank" rel="noopener">LittleLink</a>
       </footer>
 
     </div>
   </div>
-  <button id="share-btn" class="share-button">Share this page</button>
-<img src="images/qrcodeweb.png" alt="QR Code" class="qr-code">
-</body>
+  <!-- Share widget -->
+<div class="share-widget">
+  <img src="images/share.svg" alt="Share icon" class="share-icon">
+  <button id="share-btn" class="share-button">Share</button>
+</div>
 
+<!-- QR widget -->
+<div class="qr-widget">
+  <img src="images/qrcodeweb.png" alt="QR Code" class="qr-code">
+  <p class="qr-text">View on mobile</p>
+</div>
+
+</body>
 </html>
+
 <script>
 document.getElementById('share-btn').addEventListener('click', async () => {
   if (navigator.share) {
     try {
       await navigator.share({
         title: document.title,
-        text: 'Check out my links!',
+        text: 'Check out Evergreenyouth.org.uk!',
         url: window.location.href
       });
     } catch (err) {
