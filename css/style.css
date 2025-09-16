@@ -199,9 +199,10 @@ footer {
   font-size: 0.75rem;
   font-family: inherit;   /* keep site font */
   text-align: center;
-  display: block;
+  display: block!important;
   margin: 0;
   line-height: 1.1;
+	font-weight: 700;
 }
 
 /* Position share bottom-left */
