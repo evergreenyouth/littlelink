@@ -112,10 +112,12 @@ h2, h3, h4, h5, h6 {
 }
 
 /* Button hover effect */
-.button:hover, button:hover,
-[class^="button-"]:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: var(--text-color);
+
+.button:hover,
+button:hover,
+a.button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
 }
 
 /* ================================
